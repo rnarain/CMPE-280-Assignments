@@ -1,0 +1,44 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    
+    <title>Result</title>
+    </head>
+    <body>
+        <div class="box-question">
+            <header>
+            <h2>Survey</h2>
+        </header>
+                <div class="box-question-body-noflex">
+                    <p>How did you like the center ? </p>
+                        <p>Comments:</p>
+                        <textarea rows="4" cols="120" class="textbox" id="comment"></textarea>
+                        <p>Select Text Area Location:</p>
+                            <p>City:
+                            <input list="city" name="city" id="city-input">
+                            <datalist id="city">
+                                <option value="San Jose">
+                                <option value="San Fransisco">
+                                <option value="Mountain View">
+                                <option value="Palo Alto">
+                                <option value="Sunnyvale">
+                            </datalist>
+                            Room Number:
+                            <input list="rooms" name="rooms" id="rooms-input">
+                            <datalist id="rooms">
+                                <option value="Room 210">
+                                <option value="Room 110">
+                                <option value="Room 410">
+                                <option value="Room 337">
+                            </datalist>
+                            </p>
+                            <p><button onclick="return survey()">Submit & Get Score</button> <button onclick= "window.location.replace('audio-video-question.html')">Skip & Get Score</button></p>
+                        </div>
+            </div>
+            </div>
+    </body>
+    </html>
+    
